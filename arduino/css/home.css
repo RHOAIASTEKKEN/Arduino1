@@ -1,0 +1,131 @@
+.containerHome {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    gap: 30px;
+}
+
+.insert {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    label {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+}
+
+
+.resultados {
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* datos */
+.contenidos {
+    display: flex;
+    flex-direction: column;
+
+    .headerContenidos {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+.headerContenidos {
+    margin-bottom: 10px;
+
+
+    p,
+    input,
+    select {
+        width: 40px;
+        height: 50px;
+        /* box-shadow: 1px 1px 5px 1px; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 3px 27px 1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 3px 27px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 3px 27px 1px rgba(0, 0, 0, 0.75);
+
+    }
+
+    input, select {
+        border: none;
+    }
+
+    input[type="checkbox"] {
+        border: none;
+        /* Otros estilos opcionales según tus necesidades */
+        outline: none;
+        /* Quita el contorno predeterminado en algunos navegadores */
+    }
+
+    /* Estilo opcional para personalizar la apariencia del checkbox */
+
+
+    p:nth-of-type(-n+7),
+    input:nth-of-type(-n+6), select {
+        width: 100px;
+    }
+
+
+}
+
+.formulario {
+    margin-top: 50px;
+}
+
+[id^="opciones"] option[value="opcion1"] {
+    color: white;
+    background-color: red;
+}
+
+[id^="opciones"] option[value="opcion2"] {
+    color: white;
+    background-color: orange;
+}
+
+[id^="opciones"] option[value="opcion3"] {
+    color: white;
+    background-color: green;
+}
